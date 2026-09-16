@@ -448,67 +448,8 @@ h1, h2, h3{
 .projects-empty p{ font-weight: 700; color: var(--ink); margin: 0 0 4px; font-size: 1.02rem; }
 .projects-empty span{ font-size: 0.9rem; }
 
-/* النشرة الإخبارية */
-.newsletter-box{
-  background: var(--green-dark);
-  color: var(--white);
-  padding: 44px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  flex-wrap: wrap;
-}
-.newsletter-box__text h3{
-  font-size: 1.2rem;
-  margin: 0 0 6px;
-  color: var(--white);
-}
-.newsletter-box__text p{
-  margin: 0;
-  color: #D9E5DC;
-  font-size: 0.95rem;
-  max-width: 480px;
-}
-.newsletter-form{
-  display: flex;
-  gap: 0;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 360px;
-}
-.newsletter-form input[type="email"]{
-  flex-grow: 1;
-  border: 1px solid rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.08);
-  color: var(--white);
-  padding: 12px 14px;
-  font-family: var(--font-body);
-  font-size: 0.92rem;
-}
-.newsletter-form input[type="email"]::placeholder{ color: #C7D6CC; }
-.newsletter-form button{
-  border: 1px solid var(--gold);
-  background: var(--gold);
-  color: var(--ink);
-  font-weight: 700;
-  font-family: var(--font-body);
-  padding: 12px 20px;
-  font-size: 0.92rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.newsletter-form button:hover{ background: var(--gold-soft); }
-.newsletter-note{
-  width: 100%;
-  font-size: 0.78rem;
-  color: #C7D6CC;
-  margin-top: 8px;
-}
 @media (max-width: 820px){
   .projects-grid{ grid-template-columns: 1fr; }
-  .newsletter-box{ flex-direction: column; align-items: flex-start; }
-  .newsletter-form{ max-width: 100%; }
 }
 
 /* تواصل */
@@ -660,7 +601,6 @@ h1, h2, h3{
       <a href="#services">الخدمات</a>
       <a href="#projects">المشاريع</a>
       <a href="#news">الإعلانات</a>
-      <a href="#newsletter">النشرة الإخبارية</a>
       <a href="#contact">تواصل معنا</a>
     </nav>
 
@@ -897,30 +837,6 @@ h1, h2, h3{
     </div>
   </section>
 
-  <!-- ============ النشرة الإخبارية ============ -->
-  <section class="section section--tinted" id="newsletter">
-    <div class="section__inner">
-      <p class="kicker">ابقَ على اطلاع</p>
-      <h2>النشرة الإخبارية</h2>
-      <p class="section__intro">
-        اشترك في النشرة الإخبارية لمجلس قروي قيرة لتصلك آخر الإعلانات ومستجدات المشاريع مباشرة.
-      </p>
-
-      <div class="newsletter-box">
-        <div class="newsletter-box__text">
-          <h3>اشترك الآن</h3>
-          <p>أدخل بريدك الإلكتروني وسنرسل لك طلب اشتراك عبر البريد ليتم تفعيله من قبل المجلس.</p>
-        </div>
-
-        <form class="newsletter-form" action="mailto:qiraa.123@hotmail.com" method="post" enctype="text/plain">
-          <input type="email" name="اشتراك" placeholder="بريدك الإلكتروني" dir="ltr" required>
-          <button type="submit">اشتراك</button>
-        </form>
-        <span class="newsletter-note">بالضغط على "اشتراك" سيتم فتح برنامج البريد الإلكتروني لإرسال طلب الاشتراك إلى المجلس.</span>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ تواصل معنا ============ -->
   <section class="section section--tinted" id="contact">
     <div class="section__inner grid-2">
@@ -956,8 +872,8 @@ h1, h2, h3{
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <a class="map-frame__link" href="https://www.google.com/maps?q=32.12194,35.17167&z=15" target="_blank" rel="noopener">
-          فتح الموقع في خرائط جوجل للاتجاهات ↗
+        <a class="map-frame__link" href="https://www.google.com/maps/dir/?api=1&destination=32.12194,35.17167" target="_blank" rel="noopener">
+          الحصول على الاتجاهات عبر خرائط جوجل ↗
         </a>
       </div>
     </div>
